@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rachão de Futebol</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao Rachão do Sr Silvio</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#matches">Rachões</a></li>
+                <li><a href="#create-match">Criar Rachão</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Sobre o Rachão</h2>
+            <p>Esse famoso rachão foi criado para interação dos Pais e parentes dos alunos MAXIMUS. Hoje temos o SR Silvio como nosso administrador dos jogos.</p>
+            <p>Limte de 20 jogadores por Rachão</p>
+        </section>
+        
+        
+        <section id="matches">
+            <h2>Rachões Disponíveis</h2>
+            <button id="clear-matches-btn">Limpar Rachões Antigos</button>
+            <ul id="matches-list">
+                <!-- Lista de rachões será carregada aqui -->
+            </ul>
+        </section>
+        <section id="players">
+            <h2>Jogadores Inscritos</h2>
+            <ul id="players-list">
+                <!-- Lista de jogadores será carregada aqui -->
+            </ul>
+        </section>
+        <section id="create-match">
+            <h2>Criar Rachão</h2>
+            <form id="create-match-form">
+                <label for="title">Título:</label>
+                <input type="text" id="title" name="title" required>
+                <br>
+                <label for="date">Data:</label>
+                <input type="date" id="date" name="date" required>
+                <br>
+                <label for="location">Local:</label>
+                <input type="text" id="location" name="location" required>
+                <br>
+                <button type="submit">Criar</button>
+            </form>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>

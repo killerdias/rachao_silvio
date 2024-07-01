@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rachão de Futebol</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao Rachão de Futebol!</h1>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Início</a></li>
+                <li><a href="#register">Cadastre-se</a></li>
+                <li><a href="#login">Login</a></li>
+                <li><a href="/criar.html">Rachões</a></li>
+                <li><a href="#create-match">Criar Rachão</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="matches">
+            <h2>Rachões Disponíveis</h2>
+            <ul id="matches-list">
+                Lista de rachões será carregada aqui 
+            </ul>
+        </section>
+        
+        </section>
+        <section id="create-match">
+            <h2>Criar Rachão</h2>
+            <form id="create-match-form">
+                <label for="title">Título:</label>
+                <input type="text" id="title" name="title" required>
+                <br>
+                <label for="date">Data:</label>
+                <input type="date" id="date" name="date" required>
+                <br>
+                <label for="location">Local:</label>
+                <input type="text" id="location" name="location" required>
+                <br>
+                <button type="submit">Criar</button>
+            </form>
+        </section>
+    </main>
+    
+    <script src="/script_cadastro.js"></script>
+</body>
+</html>
